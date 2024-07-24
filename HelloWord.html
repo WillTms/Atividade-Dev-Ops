@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        /* Estilos Globais */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .hello-box {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease;
+            transition: transform 0.5s;
+        }
+
+        .hello-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .hello-title {
+            font-family: 'Pacifico', cursive;
+            font-size: 3em;
+            color: #4a4e69;
+            margin: 0;
+            animation: colorChange 5s infinite;
+        }
+
+        .hello-description {
+            font-size: 1.2em;
+            color: #22223b;
+            margin: 20px 0;
+        }
+
+        .hello-button {
+            font-size: 1em;
+            font-weight: 700;
+            color: white;
+            background: #9a8c98;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s;
+            box-shadow: 0 5px 15px rgba(154, 140, 152, 0.3);
+        }
+
+        .hello-button:hover {
+            background: #4a4e69;
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes colorChange {
+            0% { color: #4a4e69; }
+            50% { color: #9a8c98; }
+            100% { color: #4a4e69; }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="hello-box">
+            <h1 class="hello-title">Hello, World!</h1>
+            <p class="hello-description">
+                Bem-vindo ao seu primeiro documento HTML estilizado! <br>
+                Desfrute de uma experiência visual incrível!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
