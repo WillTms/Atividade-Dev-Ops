@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  build:
+    runs-on: windosw-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Deploy to GitHub Pages 
+        uses: peaceeris/actions-gh-pages@v3
+        with: 
+           github_tokens: ${{ secrets.AULA_CI}}
+           publish_dir: ./
+           
